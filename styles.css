@@ -597,13 +597,28 @@ button, input, select, textarea {
   font-weight: 500;
 }
 
-.kpi-sub.positive { color: #15803D; }
-.kpi-sub.neutral { color: var(--color-gray-500); }
+/* Skip Link for Keyboard Accessibility */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--brand-accent);
+  color: #FFFFFF;
+  padding: 10px 18px;
+  z-index: 10000;
+  border-radius: var(--radius-xs);
+  font-weight: 700;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
 
 .app-table-card {
   border: 1px solid var(--color-gray-200);
   border-radius: var(--radius-xs);
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-header-title {
@@ -617,6 +632,7 @@ button, input, select, textarea {
 
 .realtime-table {
   width: 100%;
+  min-width: 540px;
   border-collapse: collapse;
   font-size: 0.75rem;
 }
@@ -677,6 +693,8 @@ button, input, select, textarea {
 .node-security-bar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 6px 10px;
   background-color: var(--color-gray-50);
   border: 1px solid var(--color-gray-200);
@@ -963,10 +981,12 @@ button, input, select, textarea {
 
 .preview-table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .preview-table {
   width: 100%;
+  min-width: 500px;
   border-collapse: collapse;
   font-size: 0.75rem;
 }
@@ -1638,12 +1658,23 @@ button, input, select, textarea {
     display: none;
   }
 
+  .kpi-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
   .product-tabs {
     grid-template-columns: 1fr;
   }
 
   .tab-panels-wrapper {
-    padding: 24px;
+    padding: 20px;
+  }
+
+  .panel-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .hardware-grid,
@@ -1656,6 +1687,11 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
   }
 
+  .about-fact-strip {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
   }
@@ -1664,6 +1700,49 @@ button, input, select, textarea {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 1.875rem;
+    line-height: 1.22;
+  }
+
+  .hero-subheading {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .tab-btn {
+    padding: 12px;
+  }
+
+  .tab-title {
+    font-size: 0.875rem;
+  }
+
+  .consultation-form {
+    padding: 20px 16px;
+  }
+
+  .app-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cluster-status {
+    width: 100%;
+    justify-content: center;
   }
 }
 
