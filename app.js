@@ -160,13 +160,41 @@ function initConsultationForm() {
 
     setTimeout(() => {
       const ticketId = 'PRX-DEMO-' + Math.floor(1000 + Math.random() * 9000);
+      const name = fields.fullName.input.value.trim();
       const org = fields.companyName.input.value.trim();
+      const email = fields.workEmail.input.value.trim();
+      const phone = fields.phoneNumber.input.value.trim();
+      const system = fields.systemSelect.input.options[fields.systemSelect.input.selectedIndex].text;
+      const scope = fields.scopeSelect.input.options[fields.scopeSelect.input.selectedIndex].text;
+      const notesEl = document.getElementById('requirements');
+      const notes = notesEl ? notesEl.value.trim() : '';
+
+      const waText = `*PROXIMA SYSTEM INQUIRY [${ticketId}]*\nName: ${name}\nOrganization: ${org}\nEmail: ${email}\nPhone: ${phone}\nSystem: ${system}\nScope: ${scope}\nNotes: ${notes || 'Site survey and demo requested'}`;
+      const waUrl = `https://wa.me/2349039654557?text=${encodeURIComponent(waText)}`;
+
+      const emailSubject = `Demo Request [${ticketId}]: ${org} - ${system}`;
+      const mailtoUrl = `mailto:proximadiinfo@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(waText)}`;
 
       alertBox.className = 'form-alert success';
       alertBox.style.display = 'block';
       alertBox.innerHTML = `
-        <strong>Demonstration Request Confirmed [Docket: ${ticketId}]</strong><br>
-        Thank you. An enterprise systems engineer from our Kaduna operations team will review ${org}'s specifications and reach out within 4 business hours to arrange your briefing.
+        <div style="margin-bottom: 12px;">
+          <strong style="color: #166534; font-size: 0.9375rem;">Demonstration Request Registered [Docket: ${ticketId}]</strong>
+          <p style="margin-top: 4px; color: #166534; font-size: 0.8125rem;">
+            Thank you, ${name}. Your requirements for ${org} have been compiled. For the fastest response, send this docket directly to our engineering desk via WhatsApp or Email:
+          </p>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+          <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background-color: #25D366; color: #FFFFFF; border: none; font-weight: 700;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span>Send via WhatsApp (+234 903 965 4557)</span>
+          </a>
+          <a href="${mailtoUrl}" class="btn btn-sm" style="background-color: #1E3A8A; color: #FFFFFF; border: none; font-weight: 600;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+            <span>Email proximadiinfo@gmail.com</span>
+          </a>
+        </div>
+        <p style="margin-top: 8px; font-size: 0.75rem; color: #15803D;">Direct Phone: <a href="tel:+2349039654557" style="text-decoration: underline; font-weight: 600;">+234 903 965 4557</a> &bull; Kaduna Operations Desk</p>
       `;
 
       form.reset();
