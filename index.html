@@ -3,887 +3,1092 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proxima Digital Innovations — Mission-critical enterprise management systems and hardware-integrated biometric security solutions based in Kaduna, Nigeria. Engineered for resilience and multi-branch operations.">
-  <meta name="keywords" content="Proxima Digital Innovations, Kaduna tech company, Nigerian enterprise software, Hospital Management System HMS, School Management System SMS, Business ERP BMS, Biometric Attendance Nigeria, offline resilient software">
-  <meta name="author" content="Proxima Digital Innovations">
-  <meta name="theme-color" content="#FFFFFF">
-  <title>Proxima Digital Innovations | Mission-Critical Systems & Biometric Solutions</title>
+  <meta name="description" content="Proxima Digital Innovations — Enterprise management systems and hardware-integrated biometric access control. Engineered in Kaduna, Nigeria for multi-branch operations and offline resilience.">
+  <title>Proxima Digital Innovations | Enterprise Systems & Biometric Security</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="brand-link" aria-label="Proxima Digital Innovations Home">
-        <svg class="brand-symbol" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="28" height="28" rx="3" fill="#0F172A"/>
-          <path d="M7 7H13V13H7V7Z" fill="#FFFFFF"/>
-          <path d="M15 7H21V13H15V7Z" fill="#1E3A8A"/>
-          <path d="M7 15H13V21H7V15Z" fill="#1E3A8A"/>
-          <path d="M15 15H21V21H15V15Z" fill="#FFFFFF"/>
-          <circle cx="14" cy="14" r="1.75" fill="#38BDF8"/>
+
+  <!-- Top Announcement / System Banner -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span class="announcement-tag">Deployment Notice</span>
+      <span class="announcement-text">Now supporting hybrid edge synchronization for multi-branch enterprises across Kaduna, Abuja, and Kano.</span>
+      <a href="#contact" class="announcement-link">Schedule a Site Survey &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Primary Navigation (Verkada / Stripe Style) -->
+  <header class="header" id="navbar">
+    <div class="container header-container">
+      <a href="#top" class="brand" aria-label="Proxima Digital Innovations">
+        <svg class="brand-logo" width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#0F172A"/>
+          <path d="M8 8H14V14H8V8Z" fill="#FFFFFF"/>
+          <path d="M18 8H24V14H18V8Z" fill="#2563EB"/>
+          <path d="M8 18H14V24H8V18Z" fill="#2563EB"/>
+          <path d="M18 18H24V24H18V18Z" fill="#FFFFFF"/>
+          <circle cx="16" cy="16" r="2.5" fill="#38BDF8"/>
         </svg>
-        <div class="brand-text">
-          <span class="brand-name">PROXIMA</span>
-          <span class="brand-subtitle">Digital Innovations</span>
-        </div>
+        <span class="brand-name">PROXIMA<span class="brand-tag">DIGITAL</span></span>
       </a>
 
-      <nav class="nav-desktop" aria-label="Primary Navigation">
-        <ul class="nav-list">
-          <li><a href="#solutions" class="nav-link">Solutions</a></li>
-          <li><a href="#industries" class="nav-link">Industries</a></li>
-          <li><a href="#why-proxima" class="nav-link">Why Proxima</a></li>
-          <li><a href="#company" class="nav-link">Company</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#solutions" class="nav-item">Products & Systems</a>
+        <a href="#hardware" class="nav-item">Hardware Integration</a>
+        <a href="#industries" class="nav-item">Industries</a>
+        <a href="#architecture" class="nav-item">Why Proxima</a>
+        <a href="#about" class="nav-item">Company</a>
       </nav>
 
-      <div class="header-actions">
+      <div class="header-cta-group">
+        <a href="#contact" class="btn btn-outline btn-sm">Talk to an Engineer</a>
         <a href="#contact" class="btn btn-primary btn-sm">Request a Demo</a>
-        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Drawer Navigation -->
-    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <div class="mobile-nav-inner">
-        <ul class="mobile-nav-list">
-          <li><a href="#solutions" class="mobile-nav-link">Solutions</a></li>
-          <li><a href="#industries" class="mobile-nav-link">Industries</a></li>
-          <li><a href="#why-proxima" class="mobile-nav-link">Why Proxima</a></li>
-          <li><a href="#company" class="mobile-nav-link">Company</a></li>
-          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-        </ul>
-        <div class="mobile-nav-cta">
-          <a href="#contact" class="btn btn-primary btn-block">Request a Demo</a>
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <a href="#solutions" class="mobile-link">Products & Systems</a>
+        <a href="#hardware" class="mobile-link">Hardware Integration</a>
+        <a href="#industries" class="mobile-link">Industries</a>
+        <a href="#architecture" class="mobile-link">Why Proxima</a>
+        <a href="#about" class="mobile-link">Company</a>
+        <div class="mobile-btn-wrap">
+          <a href="#contact" class="btn btn-primary btn-full">Request a Demo</a>
         </div>
       </div>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero-section" aria-labelledby="hero-heading">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="status-indicator"></span>
-            <span class="badge-text">Mission-Critical Enterprise Engineering • Kaduna, Nigeria</span>
-          </div>
-
-          <h1 id="hero-heading" class="hero-title">
-            Enterprise Management Systems & Biometric Solutions Built for Resilience
-          </h1>
-
-          <p class="hero-lead">
-            Proxima Digital Innovations engineers fault-tolerant ERP, hospital, education, and access-control platforms. Architected from the hardware layer up to operate reliably across multi-branch infrastructures under challenging African operating conditions.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Request a Demo</a>
-            <a href="#solutions" class="btn btn-secondary">View Solutions</a>
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric-item">
-              <span class="metric-value">100%</span>
-              <span class="metric-label">Offline-Resilient Local Core</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-value">&lt;300ms</span>
-              <span class="metric-label">Hardware Biometric Matching</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-value">SHA-256</span>
-              <span class="metric-label">Cryptographic Node Integrity</span>
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="container hero-layout">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="status-dot"></span>
+          <span>Enterprise Systems & Biometrics • Kaduna, Nigeria</span>
         </div>
-
-        <!-- Restrained Technical Console Mockup -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="terminal-mockup">
-            <div class="terminal-header">
-              <div class="terminal-identity">
-                <span class="terminal-tag">SYSTEM TELEMETRY</span>
-                <span class="terminal-node">KD-CENTRAL-NODE-01</span>
-              </div>
-              <div class="terminal-status">
-                <span class="dot-online"></span>
-                <span>CLUSTER HEALTHY</span>
-              </div>
-            </div>
-
-            <div class="terminal-tabs-bar">
-              <div class="terminal-tab active">Multi-Branch Sync</div>
-              <div class="terminal-tab">Biometric Edge</div>
-              <div class="terminal-tab">Audit Log</div>
-            </div>
-
-            <div class="terminal-body">
-              <!-- Multi-Branch Table -->
-              <div class="console-section">
-                <div class="console-label-row">
-                  <span>FACILITY / BRANCH</span>
-                  <span>PROTOCOL</span>
-                  <span>QUEUE</span>
-                  <span>STATUS</span>
-                </div>
-                <div class="console-row">
-                  <div class="facility-cell">
-                    <span class="facility-name">Kaduna Central HQ</span>
-                    <span class="facility-sub">Enterprise BMS Controller</span>
-                  </div>
-                  <span class="protocol-tag">LAN / Fiber</span>
-                  <span class="queue-tag">0 pending</span>
-                  <span class="status-badge sync-done">SYNCHRONIZED</span>
-                </div>
-                <div class="console-row">
-                  <div class="facility-cell">
-                    <span class="facility-name">Zaria Specialist Clinic</span>
-                    <span class="facility-sub">HMS Offline Node</span>
-                  </div>
-                  <span class="protocol-tag">Hybrid Relay</span>
-                  <span class="queue-tag">0 pending</span>
-                  <span class="status-badge sync-done">SYNCHRONIZED</span>
-                </div>
-                <div class="console-row">
-                  <div class="facility-cell">
-                    <span class="facility-name">Kano Distribution Depot</span>
-                    <span class="facility-sub">Inventory & POS Depot</span>
-                  </div>
-                  <span class="protocol-tag">Cellular / Edge</span>
-                  <span class="queue-tag highlight">24 cached</span>
-                  <span class="status-badge sync-edge">OFFLINE RESILIENT</span>
-                </div>
-                <div class="console-row">
-                  <div class="facility-cell">
-                    <span class="facility-name">Abuja Operations Hub</span>
-                    <span class="facility-sub">Multi-Terminal Gateway</span>
-                  </div>
-                  <span class="protocol-tag">Encrypted TLS</span>
-                  <span class="queue-tag">0 pending</span>
-                  <span class="status-badge sync-done">SYNCHRONIZED</span>
-                </div>
-              </div>
-
-              <!-- Biometric Stream Box -->
-              <div class="biometric-stream-panel">
-                <div class="stream-header">
-                  <span>HARDWARE BIOMETRIC VERIFICATION STREAM</span>
-                  <span class="mono-time">08:42:19 WAT</span>
-                </div>
-                <div class="stream-event">
-                  <span class="event-time">08:42:19</span>
-                  <span class="event-device">GATE-04 [Main Turnstile]</span>
-                  <span class="event-user">ID: #4810</span>
-                  <span class="event-match">Match 99.4%</span>
-                  <span class="event-status granted">ACCESS GRANTED</span>
-                </div>
-                <div class="stream-event">
-                  <span class="event-time">08:41:52</span>
-                  <span class="event-device">REC-01 [Clinical Triage]</span>
-                  <span class="event-user">Staff #1024</span>
-                  <span class="event-match">Match 99.8%</span>
-                  <span class="event-status granted">VERIFIED</span>
-                </div>
-              </div>
-
-              <!-- Cryptographic License Verification -->
-              <div class="license-integrity-bar">
-                <div class="lic-item">
-                  <span class="lic-key">NODE LOCK:</span>
-                  <span class="lic-val">HWID-7729-NGA-KD</span>
-                </div>
-                <div class="lic-item">
-                  <span class="lic-key">CIPHER:</span>
-                  <span class="lic-val">AES-256-GCM / SHA-256</span>
-                </div>
-                <div class="lic-item">
-                  <span class="lic-key">STATE:</span>
-                  <span class="lic-val verified">SECURE & VALIDATED</span>
-                </div>
-              </div>
-            </div>
+        <h1 class="hero-heading">
+          Mission-critical management software and hardware-integrated biometric security.
+        </h1>
+        <p class="hero-subheading">
+          Proxima builds fault-tolerant ERP, hospital, academic, and physical access platforms. Architected for Nigerian enterprises operating multi-branch facilities that cannot afford power or connectivity disruptions.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Request a Demo</a>
+          <a href="#solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+        </div>
+        <div class="hero-trust-bar">
+          <div class="trust-stat">
+            <strong>100%</strong>
+            <span>Offline-Resilient Local Core</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat">
+            <strong>&lt;300ms</strong>
+            <span>Hardware Biometric Matching</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat">
+            <strong>SHA-256</strong>
+            <span>Cryptographic Node Licensing</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Operational Architecture Trust Strip -->
-    <section class="trust-strip" aria-label="Core Engineering Standards">
-      <div class="container trust-inner">
-        <div class="trust-item">
-          <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-          <div class="trust-text">
-            <strong>Tamper-Evident Security</strong>
-            <span>Hardware-bound cryptographic activation</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="8" rx="1" ry="1"/>
-            <rect x="2" y="14" width="20" height="8" rx="1" ry="1"/>
-            <line x1="6" y1="6" x2="6.01" y2="6"/>
-            <line x1="6" y1="18" x2="6.01" y2="18"/>
-          </svg>
-          <div class="trust-text">
-            <strong>Edge & Hybrid Deployments</strong>
-            <span>On-premise servers with automatic cloud sync</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-          </svg>
-          <div class="trust-text">
-            <strong>Zero-Downtime Operations</strong>
-            <span>Continuous offline capture during power & ISP drops</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-          <div class="trust-text">
-            <strong>Sub-Second Biometrics</strong>
-            <span>Physical terminal-level template matching</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solutions / Products Section -->
-    <section class="section solutions-section" id="solutions" aria-labelledby="solutions-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">PRODUCTS & PLATFORMS</span>
-          <h2 id="solutions-heading" class="section-title">Mission-Critical Systems Engineered for Demanding Operations</h2>
-          <p class="section-desc">
-            Four specialized enterprise platforms built to solve operational bottlenecks, eliminate cash leakage, automate complex records, and enforce strict identity governance.
-          </p>
-        </div>
-
-        <div class="solutions-grid">
-          <!-- Solution 1: BMS / ERP -->
-          <article class="solution-card" data-solution="bms">
-            <div class="card-meta">
-              <span class="card-sku">PROXIMA-BMS</span>
-              <span class="card-status-pill">ERP Platform</span>
+      <!-- Realistic Enterprise SaaS Dashboard Preview (Like Verkada / Linear) -->
+      <div class="hero-right">
+        <div class="app-window">
+          <!-- Window Titlebar -->
+          <div class="window-titlebar">
+            <div class="window-controls">
+              <span class="win-btn close"></span>
+              <span class="win-btn min"></span>
+              <span class="win-btn max"></span>
             </div>
-            <h3 class="card-title">Proxima BMS / ERP</h3>
-            <p class="card-subhead">Business Management & Enterprise Resource Planning</p>
-            <p class="card-body-text">
-              Unified operational control for commercial enterprises, wholesale distributors, retail chains, and manufacturing facilities. Eliminates inventory discrepancies, automates double-entry accounting, and connects multi-location depots into a single synchronized ledger.
-            </p>
-            <ul class="feature-checklist">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Multi-branch inventory reconciliation & warehouse transfers</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Automated general ledger, accounts receivable/payable, and POS</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Offline transaction journaling: register continues if internet fails</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Immutable audit logs and granular role-based permissions</span>
-              </li>
-            </ul>
-            <div class="card-footer">
-              <button type="button" class="learn-more-btn" data-target="bms">
-                <span>View BMS Architecture & Specs</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Solution 2: HMS -->
-          <article class="solution-card" data-solution="hms">
-            <div class="card-meta">
-              <span class="card-sku">PROXIMA-HMS</span>
-              <span class="card-status-pill">Clinical Platform</span>
-            </div>
-            <h3 class="card-title">Proxima HMS</h3>
-            <p class="card-subhead">Hospital & Clinical Management System</p>
-            <p class="card-body-text">
-              High-reliability clinical software for private hospitals, specialized surgical centers, and diagnostic laboratories. Designed to keep wards, pharmacies, and emergency desks operational without reliance on continuous cloud connectivity.
-            </p>
-            <ul class="feature-checklist">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Electronic Medical Records (EMR) with strict patient confidentiality</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Integrated pharmacy dispensing with batch expiry monitoring</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Laboratory Information System (LIS) with barcode sample tracking</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Automated NHIS / HMO billing reconciliation and debt prevention</span>
-              </li>
-            </ul>
-            <div class="card-footer">
-              <button type="button" class="learn-more-btn" data-target="hms">
-                <span>View HMS Architecture & Specs</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Solution 3: SMS -->
-          <article class="solution-card" data-solution="sms">
-            <div class="card-meta">
-              <span class="card-sku">PROXIMA-SMS</span>
-              <span class="card-status-pill">Academic Platform</span>
-            </div>
-            <h3 class="card-title">Proxima SMS</h3>
-            <p class="card-subhead">School & Institutional Management System</p>
-            <p class="card-body-text">
-              Comprehensive institutional management platform for primary schools, secondary academies, and tertiary colleges. Streamlines complex continuous assessments, grading computations, fee collections, and automated guardian reporting.
-            </p>
-            <ul class="feature-checklist">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Automated continuous assessment (CA) & tamper-proof report cards</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Fee invoice generation, bank reconciliation & parent receipts</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Faculty workload allocation, timetabling & subject assignment</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Biometric student clock-in integration for automated roll call</span>
-              </li>
-            </ul>
-            <div class="card-footer">
-              <button type="button" class="learn-more-btn" data-target="sms">
-                <span>View SMS Architecture & Specs</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Solution 4: Biometrics -->
-          <article class="solution-card" data-solution="biometrics">
-            <div class="card-meta">
-              <span class="card-sku">PROXIMA-BIO</span>
-              <span class="card-status-pill">Hardware-Edge Security</span>
-            </div>
-            <h3 class="card-title">Biometric Attendance & Security</h3>
-            <p class="card-subhead">Hardware-Integrated Time & Physical Access Control</p>
-            <p class="card-body-text">
-              Direct hardware-level drivers interfacing optical fingerprint scanners, facial verification terminals, and turnstile controllers. Eliminates buddy-punching, logs real-time entries with microsecond timestamps, and synchronizes directly with payroll ledgers.
-            </p>
-            <ul class="feature-checklist">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Native drivers for Hikvision, ZKTeco, and proprietary edge controllers</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Sub-300ms verification directly on hardware edge without cloud delay</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Automated shift scheduling, overtime rules, and direct payroll export</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Physical door relay interlocks with anti-passback and tamper sensors</span>
-              </li>
-            </ul>
-            <div class="card-footer">
-              <button type="button" class="learn-more-btn" data-target="biometrics">
-                <span>View Biometric Architecture & Specs</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Industries We Serve Section -->
-    <section class="section industries-section" id="industries" aria-labelledby="industries-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">SECTOR SPECIALIZATION</span>
-          <h2 id="industries-heading" class="section-title">Industries We Serve</h2>
-          <p class="section-desc">
-            Engineered specifically for Nigerian operating environments where operational continuity, internal audit compliance, and revenue leakage control are critical.
-          </p>
-        </div>
-
-        <div class="industries-grid">
-          <!-- Industry 1 -->
-          <div class="industry-card">
-            <div class="industry-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <h3 class="industry-title">Businesses & Retail</h3>
-            <p class="industry-body">
-              Supermarket networks, commercial distributors, wholesale depots, and processing facilities. We provide automated sales reconciliation, stock shrinkage mitigation, point-of-sale resilience, and audit-ready supplier ledgers.
-            </p>
-            <div class="industry-badge">Key Product: Proxima BMS + Biometric Time Control</div>
+            <div class="window-title">Proxima Enterprise Console — Production Cluster</div>
+            <div class="window-badge">Active Node: KD-HQ-01</div>
           </div>
 
-          <!-- Industry 2 -->
-          <div class="industry-card">
-            <div class="industry-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-              </svg>
-            </div>
-            <h3 class="industry-title">Hospitals & Clinics</h3>
-            <p class="industry-body">
-              Private healthcare centers, maternity facilities, specialty clinics, and diagnostic medical laboratories. We ensure zero disruption in clinical consults, strict drug dispensary accounting, and patient record confidentiality during power or ISP outages.
-            </p>
-            <div class="industry-badge">Key Product: Proxima HMS + Local EMR Node</div>
-          </div>
-
-          <!-- Industry 3 -->
-          <div class="industry-card">
-            <div class="industry-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-              </svg>
-            </div>
-            <h3 class="industry-title">Schools & Academies</h3>
-            <p class="industry-body">
-              Primary and secondary institutions, private academies, and vocational colleges. We eliminate exam computation errors, automate parent billing reconciliations, and verify staff punctuality through integrated biometric gates.
-            </p>
-            <div class="industry-badge">Key Product: Proxima SMS + Turnstile Clock-In</div>
-          </div>
-
-          <!-- Industry 4 -->
-          <div class="industry-card">
-            <div class="industry-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                <polyline points="2 17 12 22 22 17"/>
-                <polyline points="2 12 12 17 22 12"/>
-              </svg>
-            </div>
-            <h3 class="industry-title">Multi-Branch Organizations</h3>
-            <p class="industry-body">
-              Enterprises with corporate operations in Kaduna, Abuja, Kano, and decentralized facilities nationwide. We synchronize distributed operational data, enforce unified security policies, and deliver consolidated head-office executive reporting.
-            </p>
-            <div class="industry-badge">Key Product: Hybrid Synchronized Cluster</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Proxima Section -->
-    <section class="section why-section" id="why-proxima" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">ENGINEERING ADVANTAGE</span>
-          <h2 id="why-heading" class="section-title">Built for Real Operating Conditions</h2>
-          <p class="section-desc">
-            Most software breaks when the generator cycles or the fiber connection drops. Proxima is engineered specifically to eliminate dependency on ideal operating conditions.
-          </p>
-        </div>
-
-        <div class="why-grid">
-          <!-- Pillar 1 -->
-          <div class="why-card">
-            <div class="why-num">01</div>
-            <h3 class="why-title">Built for African Operating Conditions</h3>
-            <p class="why-text">
-              Unstable power infrastructure and variable internet bandwidth are structural realities, not unexpected exceptions. Proxima architectures feature dual-mode operation: the local facility runs at zero-latency on isolated local area networks, queueing all mutations locally and executing two-way conflict-free synchronization when upstream connection is restored.
-            </p>
-            <div class="tech-spec-tag">Resilient Local Write-Ahead Logging • Auto Sync</div>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="why-card">
-            <div class="why-num">02</div>
-            <h3 class="why-title">Proprietary Licensing & Software Protection</h3>
-            <p class="why-text">
-              We engineer proprietary cryptographic node locking that binds installations to verifiable machine signatures. Tamper-evident software verification prevents unlicensed code manipulation, data tampering, and unauthorized installation replication on internal networks, safeguarding organizational intellectual property and system integrity.
-            </p>
-            <div class="tech-spec-tag">Hardware-Bound Signatures • Cryptographic Integrity</div>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="why-card">
-            <div class="why-num">03</div>
-            <h3 class="why-title">Hardware-Edge Biometric Integration</h3>
-            <p class="why-text">
-              Unlike generic web developers who rely on brittle cloud-only webhooks, our engineering team writes native protocols directly to physical turnstiles, optical fingerprint readers, and biometric cameras. Authentication happens at the physical edge in sub-300ms, operating reliably even during complete building network disconnects.
-            </p>
-            <div class="tech-spec-tag">Direct Socket Protocols • Local Edge Matching</div>
-          </div>
-
-          <!-- Pillar 4 -->
-          <div class="why-card">
-            <div class="why-num">04</div>
-            <h3 class="why-title">Proven in Production with Private Companies</h3>
-            <p class="why-text">
-              Proxima systems are not theoretical concepts or prototypes. We are actively deployed in active production environments across Kaduna and Northern Nigeria, processing thousands of daily transactions, patient interactions, and employee biometric records with verified audit compliance.
-            </p>
-            <div class="tech-spec-tag">Active Production Deployments • Direct Local Support</div>
-          </div>
-        </div>
-
-        <!-- Comparative Architectural Matrix -->
-        <div class="matrix-wrapper">
-          <div class="matrix-header">
-            <h3>Architectural Comparison: Proxima vs. Conventional Software</h3>
-            <p>Why mission-critical operations cannot rely on generic cloud-only software stacks.</p>
-          </div>
-          <div class="table-responsive">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-feature">Architectural Parameter</th>
-                  <th scope="col" class="col-proxima">Proxima Digital Innovations</th>
-                  <th scope="col" class="col-standard">Standard Commercial Software</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Internet Outage Behavior</td>
-                  <td class="cell-proxima"><strong>Continuous Local Operation.</strong> POS, EMR, and biometrics log locally without interruption.</td>
-                  <td class="cell-standard">Total stoppage. Browser spins, checkout registers freeze, data uncommitted.</td>
-                </tr>
-                <tr>
-                  <td>Biometric Speed & Latency</td>
-                  <td class="cell-proxima"><strong>&lt;300ms on Hardware Edge.</strong> Firmware-level templates match locally at the turnstile.</td>
-                  <td class="cell-standard">3–8s round-trip web request or requires manual paper fallback.</td>
-                </tr>
-                <tr>
-                  <td>Deployment Topology</td>
-                  <td class="cell-proxima"><strong>Air-Gapped, On-Premises, or Hybrid Relay.</strong> Full data sovereignty under customer control.</td>
-                  <td class="cell-standard">Forced multi-tenant cloud only. No local backup or sovereignty.</td>
-                </tr>
-                <tr>
-                  <td>Software Licensing & Security</td>
-                  <td class="cell-proxima"><strong>Hardware-Locked Cryptography.</strong> Tamper-evident node binding and immutable audit trails.</td>
-                  <td class="cell-standard">Plain text API tokens, easy to spoof, brittle licensing mechanisms.</td>
-                </tr>
-                <tr>
-                  <td>Engineering & Field Support</td>
-                  <td class="cell-proxima"><strong>Direct Kaduna Engineering Team.</strong> On-site deployment, hardware wiring, and direct SLA.</td>
-                  <td class="cell-standard">Remote automated ticket support or offshore call center queues.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About / Company Section -->
-    <section class="section company-section" id="company" aria-labelledby="company-heading">
-      <div class="container">
-        <div class="company-grid">
-          <div class="company-narrative">
-            <span class="section-tag">ENGINEERING-FIRST CULTURE</span>
-            <h2 id="company-heading" class="section-title">Headquartered in Kaduna, Nigeria</h2>
-            <p class="company-lead">
-              Proxima Digital Innovations was founded on a simple engineering principle: mission-critical organizations in Nigeria deserve enterprise systems engineered specifically for their operational realities.
-            </p>
-            <p class="company-body">
-              Based in Kaduna, our team combines low-level systems engineering, database architecture, and physical security hardware integration. We do not act as an agency or resell generic templates. We build, deploy, and maintain proprietary platforms that power critical financial, clinical, and human-resource workflows for private businesses and institutions.
-            </p>
-            <p class="company-body">
-              Our engineers conduct full on-site infrastructure audits, specify appropriate biometric edge hardware, install local failover controllers, and train internal staff. When an issue arises, you speak directly with the engineers who built the system — not a tier-1 customer service intermediary.
-            </p>
-            
-            <div class="company-details-list">
-              <div class="detail-entry">
-                <span class="detail-label">Headquarters:</span>
-                <span class="detail-val">Kaduna, Kaduna State, Nigeria</span>
-              </div>
-              <div class="detail-entry">
-                <span class="detail-label">Focus Areas:</span>
-                <span class="detail-val">Mission-Critical ERP, Hospital EMR/HMS, School SMS, Hardware Biometrics</span>
-              </div>
-              <div class="detail-entry">
-                <span class="detail-label">Deployment Model:</span>
-                <span class="detail-val">On-Premises High Availability, Hybrid Sync, Edge Controllers</span>
-              </div>
-              <div class="detail-entry">
-                <span class="detail-label">Engineering Support:</span>
-                <span class="detail-val">Direct SLA-backed on-site & telemetry monitoring</span>
+          <!-- Application Header -->
+          <div class="app-topbar">
+            <div class="org-picker">
+              <div class="org-avatar">AN</div>
+              <div class="org-info">
+                <span class="org-name">Al-Noor Enterprises & Diagnostic Centers</span>
+                <span class="org-meta">Kaduna HQ • 4 Connected Branches</span>
               </div>
             </div>
+            <div class="cluster-status">
+              <span class="pulse-indicator"></span>
+              <span>All Branches Synced</span>
+            </div>
           </div>
 
-          <div class="company-card-side">
-            <div class="principles-box">
-              <h3 class="principles-title">Core Engineering Principles</h3>
-              <ul class="principles-list">
-                <li>
-                  <span class="p-num">01</span>
-                  <div>
-                    <strong>Data Sovereignty First</strong>
-                    <p>Your records, financial ledgers, and employee templates remain securely inside your facility or private dedicated cloud.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="p-num">02</span>
-                  <div>
-                    <strong>Zero Toleration for False Verification</strong>
-                    <p>Physical biometric matching is strictly 1:1 or 1:N authenticated with tamper-proof audit trails.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="p-num">03</span>
-                  <div>
-                    <strong>No Shelfware or Gimmicks</strong>
-                    <p>Every feature solves a concrete administrative headache: ghost workers, cash leakage, stock shrinkage, or uncollected fees.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="p-num">04</span>
-                  <div>
-                    <strong>Long-Term System Lifecycle</strong>
-                    <p>Architected for years of production uptime with automated local database vacuuming and integrity checks.</p>
-                  </div>
-                </li>
-              </ul>
+          <!-- Application Body -->
+          <div class="app-layout">
+            <!-- Sidebar -->
+            <div class="app-sidebar">
+              <div class="sidebar-item active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Operational Overview</span>
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                <span>Multi-Depot Inventory</span>
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <span>Clinical Consults & EMR</span>
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/></svg>
+                <span>Biometric Terminals (18)</span>
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                <span>Audit Logs & Security</span>
+              </div>
+            </div>
 
-              <div class="callout-banner">
-                <span class="callout-icon">📍</span>
-                <div class="callout-content">
-                  <strong>Local Presence, Direct Accountability</strong>
-                  <span>Engineers based in Kaduna for immediate on-site hardware deployment and system audits.</span>
+            <!-- Main Content Area -->
+            <div class="app-main">
+              <!-- KPI Row -->
+              <div class="kpi-grid">
+                <div class="kpi-card">
+                  <span class="kpi-label">Reconciled Turnover</span>
+                  <span class="kpi-value">₦84,250,000</span>
+                  <span class="kpi-sub positive">&uarr; Multi-branch ledger balanced</span>
+                </div>
+                <div class="kpi-card">
+                  <span class="kpi-label">Active Hardware Readers</span>
+                  <span class="kpi-value">18 / 18</span>
+                  <span class="kpi-sub neutral">Hikvision & ZKTeco online</span>
+                </div>
+                <div class="kpi-card">
+                  <span class="kpi-label">Branch Sync Queue</span>
+                  <span class="kpi-value">0 Pending</span>
+                  <span class="kpi-sub positive">Zero conflict mutations</span>
+                </div>
+              </div>
+
+              <!-- Live Operations Table -->
+              <div class="app-table-card">
+                <div class="table-header-title">Real-Time Facility Operations Stream</div>
+                <table class="realtime-table">
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Facility / Branch</th>
+                      <th>Operational Event</th>
+                      <th>Personnel / Reference</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font-mono">08:42:10</td>
+                      <td>Kaduna Central HQ</td>
+                      <td>Turnstile Biometric Clock-in</td>
+                      <td>Amina Bello (ID #4810)</td>
+                      <td><span class="chip chip-success">Verified (99.4%)</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-mono">08:39:44</td>
+                      <td>Zaria Specialist Clinic</td>
+                      <td>Pharmacy Stock Dispensing</td>
+                      <td>Rx #9914 (Batch Exp: 2027)</td>
+                      <td><span class="chip chip-info">Dispensed</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-mono">08:35:12</td>
+                      <td>Kano Logistics Depot</td>
+                      <td>Inter-Warehouse Transfer</td>
+                      <td>Waybill #WB-2049 (420 Units)</td>
+                      <td><span class="chip chip-success">Synchronized</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-mono">08:31:05</td>
+                      <td>Abuja Medical Center</td>
+                      <td>Emergency Triage Ingestion</td>
+                      <td>Patient #PT-7721</td>
+                      <td><span class="chip chip-success">Admitted</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Node Security Strip -->
+              <div class="node-security-bar">
+                <div class="security-chip">
+                  <span class="key">HARDWARE LOCK:</span>
+                  <span class="val">KD-7729-NODE-VALIDATED</span>
+                </div>
+                <div class="security-chip">
+                  <span class="key">ENCRYPTION:</span>
+                  <span class="val">AES-256-GCM / TLS 1.3</span>
+                </div>
+                <div class="security-chip">
+                  <span class="key">CORE STATE:</span>
+                  <span class="val success">AIRGAP FAILOVER READY</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact / CTA Section -->
-    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-card-wrapper">
-          <div class="contact-info-col">
-            <span class="section-tag light">COMMENCE IMPLEMENTATION</span>
-            <h2 id="contact-heading" class="contact-title">Request a Production Demonstration or Site Audit</h2>
-            <p class="contact-lead">
-              Speak directly with our systems engineers. We will analyze your organization’s workflow bottlenecks, hardware requirements, and multi-branch infrastructure.
-            </p>
-
-            <div class="contact-channels">
-              <div class="channel-item">
-                <div class="channel-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
-                </div>
-                <div>
-                  <span class="channel-label">Operational Headquarters</span>
-                  <span class="channel-val">Kaduna, Kaduna State, Nigeria</span>
-                </div>
-              </div>
-
-              <div class="channel-item">
-                <div class="channel-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                    <polyline points="22,6 12,13 2,6"/>
-                  </svg>
-                </div>
-                <div>
-                  <span class="channel-label">Engineering Inquiries</span>
-                  <a href="mailto:contact@proximadigital.ng" class="channel-val-link">contact@proximadigital.ng</a>
-                </div>
-              </div>
-
-              <div class="channel-item">
-                <div class="channel-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
-                </div>
-                <div>
-                  <span class="channel-label">Direct Line / Technical Desk</span>
-                  <span class="channel-val">+234 (0) 800 PROXIMA / +234 810 000 0000</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="sla-commitment">
-              <div class="sla-indicator"></div>
-              <span>SLA Target: Initial technical consultation arranged within 4 business hours.</span>
-            </div>
-          </div>
-
-          <div class="contact-form-col">
-            <form id="demoRequestForm" class="enterprise-form" novalidate>
-              <div class="form-header">
-                <h3>System Inquiry & Demo Specification</h3>
-                <p>Fill out the technical requirements below to arrange a live briefing.</p>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="fullName">Full Name <span class="required">*</span></label>
-                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Ibrahim Abubakar" required autocomplete="name">
-                  <span class="field-error" id="fullNameError"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="workEmail">Work Email <span class="required">*</span></label>
-                  <input type="email" id="workEmail" name="workEmail" class="form-control" placeholder="name@company.com" required autocomplete="email">
-                  <span class="field-error" id="workEmailError"></span>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phoneNumber">Phone / WhatsApp <span class="required">*</span></label>
-                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="+234 800 000 0000" required autocomplete="tel">
-                  <span class="field-error" id="phoneNumberError"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="organizationName">Organization & Location <span class="required">*</span></label>
-                  <input type="text" id="organizationName" name="organizationName" class="form-control" placeholder="e.g. Al-Madina Healthcare, Kaduna" required>
-                  <span class="field-error" id="organizationNameError"></span>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="solutionSelect">Platform of Interest <span class="required">*</span></label>
-                  <select id="solutionSelect" name="solutionSelect" class="form-control" required>
-                    <option value="" disabled selected>Select an enterprise solution...</option>
-                    <option value="bms">Proxima BMS / ERP (Business Management)</option>
-                    <option value="hms">Proxima HMS (Hospital & Clinic Management)</option>
-                    <option value="sms">Proxima SMS (School & Academic Management)</option>
-                    <option value="biometric">Biometric Attendance & Access Control</option>
-                    <option value="multi">Comprehensive Multi-System Infrastructure</option>
-                  </select>
-                  <span class="field-error" id="solutionSelectError"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="branchCount">Operational Scope <span class="required">*</span></label>
-                  <select id="branchCount" name="branchCount" class="form-control" required>
-                    <option value="" disabled selected>Select facility size...</option>
-                    <option value="single">Single Facility (Up to 50 Staff)</option>
-                    <option value="mid">Single Large Facility (50 - 250 Staff)</option>
-                    <option value="multi-2-5">Multi-Branch (2 to 5 Facilities)</option>
-                    <option value="multi-6+">Enterprise Network (6+ Locations)</option>
-                  </select>
-                  <span class="field-error" id="branchCountError"></span>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="requirementsNote">Operational Requirements / Current Pain Points</label>
-                <textarea id="requirementsNote" name="requirementsNote" class="form-control" rows="3" placeholder="Briefly describe your existing infrastructure, key challenges (e.g. inventory leakage, offline sync, attendance tracking), or specific timeline..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
-                <span>Submit Technical Demo Request</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-
-              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Technical Specs Modal -->
-  <div class="modal-backdrop" id="specsModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <span class="modal-sku" id="modalSku">PROXIMA-SPEC</span>
-          <h3 class="modal-title" id="modalTitle">Technical Architecture</h3>
-        </div>
-        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-      <div class="modal-body" id="modalContent">
-        <!-- Injected via JavaScript -->
-      </div>
-      <div class="modal-footer">
-        <a href="#contact" class="btn btn-primary btn-sm" id="modalCtaBtn">Request System Demonstration</a>
-        <button type="button" class="btn btn-secondary btn-sm" id="modalDismissBtn">Close</button>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <div class="footer-col brand-col">
+  <!-- Interactive Products & Systems Suite (Verkada / Linear Style Tabbed Showcase) -->
+  <section class="section section-light" id="solutions">
+    <div class="container">
+      <div class="section-lead">
+        <span class="kicker">Core Product Suite</span>
+        <h2 class="section-title">Specialized Platforms Built for Heavy Workloads</h2>
+        <p class="section-description">
+          We don’t build generic websites. We design, deploy, and support four specialized software and hardware systems built to withstand the demands of commercial, clinical, and institutional operations.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="product-tabs" role="tablist" aria-label="Solutions Overview">
+        <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="bms" id="tab-bms">
+          <span class="tab-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </span>
+          <div class="tab-text-group">
+            <span class="tab-title">Proxima BMS / ERP</span>
+            <span class="tab-sub">Commercial & Multi-Branch</span>
+          </div>
+        </button>
+
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="hms" id="tab-hms">
+          <span class="tab-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </span>
+          <div class="tab-text-group">
+            <span class="tab-title">Proxima HMS</span>
+            <span class="tab-sub">Hospitals & Clinical Centers</span>
+          </div>
+        </button>
+
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="sms" id="tab-sms">
+          <span class="tab-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </span>
+          <div class="tab-text-group">
+            <span class="tab-title">Proxima SMS</span>
+            <span class="tab-sub">Schools & Academies</span>
+          </div>
+        </button>
+
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="biometrics" id="tab-biometrics">
+          <span class="tab-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/></svg>
+          </span>
+          <div class="tab-text-group">
+            <span class="tab-title">Biometric Security</span>
+            <span class="tab-sub">Hardware Access & Attendance</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Tab Content Panels -->
+      <div class="tab-panels-wrapper">
+
+        <!-- Panel 1: BMS -->
+        <div class="tab-panel active" id="panel-bms" role="tabpanel">
+          <div class="panel-grid">
+            <div class="panel-content">
+              <span class="badge-tag">Enterprise ERP & Distribution</span>
+              <h3 class="panel-title">Proxima BMS: Unified Multi-Branch Business Management</h3>
+              <p class="panel-description">
+                Designed for commercial trading networks, wholesale distributors, retail supermarkets, and production facilities. Consolidates multi-warehouse stock balances, automates double-entry accounting ledgers, and eliminates point-of-sale downtime.
+              </p>
+              <div class="panel-features-list">
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Multi-Warehouse Stock Rebalancing:</strong>
+                    <span>Track goods in transit between Kaduna, Kano, and Abuja with strict dispatch-and-receipt verification.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Offline Point-of-Sale Engine:</strong>
+                    <span>Cashiers continue scanning barcodes and issuing receipts even if fiber or cellular internet cuts out.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Double-Entry General Ledger:</strong>
+                    <span>Automated trial balances, cash-flow reconciliation, and immutable audit logs that prevent employee leakage.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-cta">
+                <a href="#contact" class="btn btn-primary">Schedule BMS Demo</a>
+                <span class="cta-note">On-site deployment available across Kaduna State</span>
+              </div>
+            </div>
+
+            <!-- UI Preview Card -->
+            <div class="panel-preview">
+              <div class="preview-card">
+                <div class="preview-header">
+                  <span class="preview-title">Proxima BMS &bull; Multi-Depot Stock Matrix</span>
+                  <span class="status-pill green">Reconciled</span>
+                </div>
+                <div class="preview-table-wrap">
+                  <table class="preview-table">
+                    <thead>
+                      <tr>
+                        <th>SKU / Product Description</th>
+                        <th>Kaduna Central</th>
+                        <th>Zaria Depot</th>
+                        <th>Kano Hub</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Industrial Solvent 20L (IS-20L)</td>
+                        <td>420 units</td>
+                        <td>115 units</td>
+                        <td>880 units</td>
+                        <td><span class="chip chip-success">Balanced</span></td>
+                      </tr>
+                      <tr>
+                        <td>Commercial Packing Film 500m</td>
+                        <td>1,240 rolls</td>
+                        <td>310 rolls</td>
+                        <td>1,950 rolls</td>
+                        <td><span class="chip chip-success">Balanced</span></td>
+                      </tr>
+                      <tr>
+                        <td>Hydraulic Valve Assembly #77</td>
+                        <td>45 units</td>
+                        <td>8 units</td>
+                        <td>12 units</td>
+                        <td><span class="chip chip-warning">Reorder Due</span></td>
+                      </tr>
+                      <tr>
+                        <td>FMCG Distribution Crate A-1</td>
+                        <td>3,100 units</td>
+                        <td>840 units</td>
+                        <td>4,200 units</td>
+                        <td><span class="chip chip-success">Balanced</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="preview-footer">
+                  <span>Ledger Reconciliation: ₦142,500,000 Verified</span>
+                  <span class="sync-tag">&check; Offline Journal Flushed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: HMS -->
+        <div class="tab-panel" id="panel-hms" role="tabpanel">
+          <div class="panel-grid">
+            <div class="panel-content">
+              <span class="badge-tag">Clinical & Healthcare Software</span>
+              <h3 class="panel-title">Proxima HMS: Hospital Management Without Downtime</h3>
+              <p class="panel-description">
+                Tailored for private hospitals, multi-specialty clinics, diagnostic centers, and maternity homes. Guarantees that outpatient reception, electronic medical records (EMR), pharmacy dispensaries, and billing desks stay operational during power outages.
+              </p>
+              <div class="panel-features-list">
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Zero-Downtime EMR & Triage:</strong>
+                    <span>Doctors and nurses access patient history and write clinical notes on local network servers without internet lag.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Pharmacy Expiration & Batch Verification:</strong>
+                    <span>Enforces dispensing from correct batches, alerts pharmacists to expiring medication, and locks inventory to billing.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Automated NHIS & HMO Tariffs:</strong>
+                    <span>Prevents uncollected co-payments, auto-calculates approved HMO service limits, and eliminates billing debt.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-cta">
+                <a href="#contact" class="btn btn-primary">Schedule HMS Demo</a>
+                <span class="cta-note">Includes complete on-premise local server configuration</span>
+              </div>
+            </div>
+
+            <!-- UI Preview Card -->
+            <div class="panel-preview">
+              <div class="preview-card">
+                <div class="preview-header">
+                  <span class="preview-title">Proxima HMS &bull; Clinical Triage & Dispensary</span>
+                  <span class="status-pill green">Clinical Core Online</span>
+                </div>
+                <div class="preview-table-wrap">
+                  <table class="preview-table">
+                    <thead>
+                      <tr>
+                        <th>Patient ID / Name</th>
+                        <th>Department</th>
+                        <th>Prescription / Diagnostics</th>
+                        <th>HMO / Billing</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#PT-8831 &bull; Fatima Sanusi</td>
+                        <td>Outpatient / Consult 2</td>
+                        <td>Ceftriaxone 1g IV (Batch: 09/27)</td>
+                        <td>AXA Mansard (Pre-approved)</td>
+                        <td><span class="chip chip-success">Dispensed</span></td>
+                      </tr>
+                      <tr>
+                        <td>#PT-8832 &bull; Dauda Mohammed</td>
+                        <td>Cardiology Unit</td>
+                        <td>ECG & Full Blood Count (FBC)</td>
+                        <td>Private / Settled POS</td>
+                        <td><span class="chip chip-info">Lab In-Progress</span></td>
+                      </tr>
+                      <tr>
+                        <td>#PT-8833 &bull; Grace John</td>
+                        <td>Maternity Ward 4</td>
+                        <td>Ultrasound Scan & Iron Infusion</td>
+                        <td>Hygeia HMO</td>
+                        <td><span class="chip chip-success">Admitted</span></td>
+                      </tr>
+                      <tr>
+                        <td>#PT-8834 &bull; Usman Garba</td>
+                        <td>General Medicine</td>
+                        <td>Routine Antimalarial & Vitals</td>
+                        <td>Cash / Reconciled</td>
+                        <td><span class="chip chip-neutral">Discharged</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="preview-footer">
+                  <span>Pharmacy Lock: 100% Dispensing Reconciled</span>
+                  <span class="sync-tag">&check; EMR Encrypted On-Premise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: SMS -->
+        <div class="tab-panel" id="panel-sms" role="tabpanel">
+          <div class="panel-grid">
+            <div class="panel-content">
+              <span class="badge-tag">Academic Administration</span>
+              <h3 class="panel-title">Proxima SMS: School Management & Automated Grading</h3>
+              <p class="panel-description">
+                Built for private primary, secondary, and tertiary academies. Eliminates continuous assessment (CA) computation errors, automates student report card publishing, enforces school fee reconciliation, and verifies morning roll-call with turnstiles.
+              </p>
+              <div class="panel-features-list">
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Automated CA & Exam Computations:</strong>
+                    <span>Teachers enter raw scores; system automatically computes positions, weighted averages, and produces tamper-proof report sheets.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Bursary & Bank Payment Matching:</strong>
+                    <span>Generates invoices per term, reconciles bank payment slips, prevents fake teller fraud, and gives parents instant receipts.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Integrated Biometric Roll Call:</strong>
+                    <span>Students and faculty clock in via biometric turnstiles at the school gate; logs are automatically tied to class registers.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-cta">
+                <a href="#contact" class="btn btn-primary">Schedule SMS Demo</a>
+                <span class="cta-note">Includes teacher training and grading configuration</span>
+              </div>
+            </div>
+
+            <!-- UI Preview Card -->
+            <div class="panel-preview">
+              <div class="preview-card">
+                <div class="preview-header">
+                  <span class="preview-title">Proxima SMS &bull; Continuous Assessment & Bursary</span>
+                  <span class="status-pill green">Term 2 Active</span>
+                </div>
+                <div class="preview-table-wrap">
+                  <table class="preview-table">
+                    <thead>
+                      <tr>
+                        <th>Student Name / Reg No</th>
+                        <th>Class</th>
+                        <th>CA (40%)</th>
+                        <th>Exam (60%)</th>
+                        <th>Tuition Fee Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aliyu Hassan &bull; #KD-2024-081</td>
+                        <td>SS 2 Science A</td>
+                        <td>36 / 40</td>
+                        <td>54 / 60 (90% - A1)</td>
+                        <td><span class="chip chip-success">Paid (Bank Ref Verified)</span></td>
+                      </tr>
+                      <tr>
+                        <td>Zainab Kabir &bull; #KD-2024-094</td>
+                        <td>SS 2 Science A</td>
+                        <td>34 / 40</td>
+                        <td>51 / 60 (85% - A1)</td>
+                        <td><span class="chip chip-success">Paid (Receipt #8812)</span></td>
+                      </tr>
+                      <tr>
+                        <td>Joshua Yakubu &bull; #KD-2024-102</td>
+                        <td>SS 2 Science A</td>
+                        <td>31 / 40</td>
+                        <td>48 / 60 (79% - B2)</td>
+                        <td><span class="chip chip-warning">Outstanding Balance</span></td>
+                      </tr>
+                      <tr>
+                        <td>Maryam Shehu &bull; #KD-2024-118</td>
+                        <td>SS 2 Science A</td>
+                        <td>38 / 40</td>
+                        <td>56 / 60 (94% - A1)</td>
+                        <td><span class="chip chip-success">Paid in Full</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="preview-footer">
+                  <span>Term Average: 84.2% &bull; Grade Distribution Locked</span>
+                  <span class="sync-tag">&check; 420 Students Reconciled</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Biometrics -->
+        <div class="tab-panel" id="panel-biometrics" role="tabpanel">
+          <div class="panel-grid">
+            <div class="panel-content">
+              <span class="badge-tag">Physical Security & Hardware</span>
+              <h3 class="panel-title">Hardware-Integrated Biometric Access & Attendance</h3>
+              <p class="panel-description">
+                We write direct low-level TCP/IP drivers for Hikvision, ZKTeco, and proprietary turnstiles. Eliminates buddy punching, records sub-300ms verification at the physical edge, and feeds directly into payroll without messy third-party software.
+              </p>
+              <div class="panel-features-list">
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Sub-300ms Edge Verification:</strong>
+                    <span>Template matching runs locally on terminal hardware. Doors open instantly without waiting for internet round-trips.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Direct Payroll & Shift Integration:</strong>
+                    <span>Grace periods, rotational shifts, and overtime calculations export directly to your accounts department with zero human tampering.</span>
+                  </div>
+                </div>
+                <div class="feature-bullet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div>
+                    <strong>Turnstile Relays & Anti-Passback:</strong>
+                    <span>Prevents unauthorized pass-backs and activates optical barrier turnstiles, electromagnetic locks, and gate arms.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-cta">
+                <a href="#contact" class="btn btn-primary">Schedule Hardware Consultation</a>
+                <span class="cta-note">Includes complete device wiring & turnstile installation</span>
+              </div>
+            </div>
+
+            <!-- UI Preview Card -->
+            <div class="panel-preview">
+              <div class="preview-card">
+                <div class="preview-header">
+                  <span class="preview-title">Proxima Edge Controller &bull; Active Turnstile Telemetry</span>
+                  <span class="status-pill green">18 Terminals Active</span>
+                </div>
+                <div class="preview-table-wrap">
+                  <table class="preview-table">
+                    <thead>
+                      <tr>
+                        <th>Terminal Name / Location</th>
+                        <th>Device Protocol</th>
+                        <th>Last Match / Punch</th>
+                        <th>User ID</th>
+                        <th>Access Relay</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Turnstile Gate 01 &bull; Main Entrance</td>
+                        <td>TCP/IP Direct Socket</td>
+                        <td>08:42:19 &bull; Fingerprint (99.8%)</td>
+                        <td>Staff #1024</td>
+                        <td><span class="chip chip-success">Relay Unlocked</span></td>
+                      </tr>
+                      <tr>
+                        <td>Turnstile Gate 02 &bull; Factory Floor</td>
+                        <td>Hikvision SDK Native</td>
+                        <td>08:41:52 &bull; Facial 3D (98.9%)</td>
+                        <td>Operator #3319</td>
+                        <td><span class="chip chip-success">Relay Unlocked</span></td>
+                      </tr>
+                      <tr>
+                        <td>Terminal 03 &bull; Server Room</td>
+                        <td>ZKTeco Wiegand / IP</td>
+                        <td>08:38:10 &bull; Dual Auth (Card + Bio)</td>
+                        <td>Engineer #004</td>
+                        <td><span class="chip chip-success">Relay Unlocked</span></td>
+                      </tr>
+                      <tr>
+                        <td>Terminal 04 &bull; Loading Bay Gate</td>
+                        <td>RS-485 / Edge Controller</td>
+                        <td>08:35:40 &bull; Fingerprint (99.2%)</td>
+                        <td>Driver #882</td>
+                        <td><span class="chip chip-success">Relay Unlocked</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="preview-footer">
+                  <span>Shift Roster: 240 Punches Ingested Today</span>
+                  <span class="sync-tag">&check; Anti-Passback Enforced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hardware Integration Showcase (Kisi / Verkada Style) -->
+  <section class="section section-white" id="hardware">
+    <div class="container">
+      <div class="section-lead">
+        <span class="kicker">Direct Hardware Integration</span>
+        <h2 class="section-title">We Don’t Just Write Software. We Interface Physical Hardware.</h2>
+        <p class="section-description">
+          Unlike pure web agencies who struggle with physical devices, Proxima connects directly to enterprise biometric terminals, access barriers, and point-of-sale peripherals.
+        </p>
+      </div>
+
+      <div class="hardware-grid">
+        <div class="hardware-card">
+          <div class="hardware-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/></svg>
+          </div>
+          <h3 class="hardware-name">Optical & Capacitive Fingerprint Readers</h3>
+          <p class="hardware-desc">
+            Direct socket integration with industry-standard sensors. Fast 1:N biometric matching, live finger detection, and local punch storage of up to 100,000 events.
+          </p>
+          <div class="hardware-meta">Hikvision &bull; ZKTeco &bull; Suprema &bull; USB Optical Scanners</div>
+        </div>
+
+        <div class="hardware-card">
+          <div class="hardware-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          </div>
+          <h3 class="hardware-name">3D Facial Recognition Access Terminals</h3>
+          <p class="hardware-desc">
+            Touchless high-speed entry with infrared anti-spoofing lenses. Validates staff within 0.2 seconds under high-traffic corporate and school morning rushes.
+          </p>
+          <div class="hardware-meta">Dual-Camera AI Terminals &bull; Infrared Night Vision &bull; IP65 Rated</div>
+        </div>
+
+        <div class="hardware-card">
+          <div class="hardware-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+          </div>
+          <h3 class="hardware-name">Motorized Tripods & Flap Turnstiles</h3>
+          <p class="hardware-desc">
+            Physical access control barriers wired directly to Proxima edge controllers. Complete anti-tailgating logic, fire alarm override, and bidirectional counting.
+          </p>
+          <div class="hardware-meta">Stainless Steel Tripods &bull; Full-Height Security Gates &bull; Dry Contact Relays</div>
+        </div>
+
+        <div class="hardware-card">
+          <div class="hardware-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          </div>
+          <h3 class="hardware-name">Point-of-Sale & Clinical Peripherals</h3>
+          <p class="hardware-desc">
+            Reliable drivers for thermal receipt printers, 2D specimen barcode scanners, biometric doctor sign-in pads, and electronic cash drawer triggers.
+          </p>
+          <div class="hardware-meta">ESC/POS Thermal &bull; USB / Serial / Ethernet &bull; Zebra Barcode Printers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Proxima / Architecture Section -->
+  <section class="section section-light" id="architecture">
+    <div class="container">
+      <div class="section-lead">
+        <span class="kicker">Engineering Foundation</span>
+        <h2 class="section-title">Built for Real Nigerian Operating Conditions</h2>
+        <p class="section-description">
+          When the generator kicks in or the fiber line goes down, most software stops working. We build architecture that treats power outages and internet downtime as normal conditions.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">01</div>
+          <h3 class="pillar-title">Offline-Resilient Local Core</h3>
+          <p class="pillar-body">
+            Every facility runs on a dedicated local database engine. Cash registers scan, triage desks enter vitals, and turnstiles open with zero lag on the local network. When the internet recovers, all transactions sync upstream automatically.
+          </p>
+          <div class="pillar-tag">Store-and-Forward &bull; Zero Cloud Dependency</div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">02</div>
+          <h3 class="pillar-title">Hardware-Bound Cryptographic Licensing</h3>
+          <p class="pillar-body">
+            Our software installations are bound to unique machine hardware signatures using SHA-256 and asymmetric cryptographic keys. This prevents unauthorized software duplication, tampering, and internal IT license spoofing.
+          </p>
+          <div class="pillar-tag">Machine-Locked Security &bull; Anti-Tamper Core</div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">03</div>
+          <h3 class="pillar-title">Direct Low-Level Device Protocols</h3>
+          <p class="pillar-body">
+            We don’t rely on fragile webhooks. Our engineering team writes direct socket communication layers that interface directly with physical turnstile controllers, biometric cameras, and RFID cards, guaranteeing sub-second response times.
+          </p>
+          <div class="pillar-tag">Direct Socket I/O &bull; Sub-300ms Match</div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">04</div>
+          <h3 class="pillar-title">Kaduna-Based Engineering & On-Site SLA</h3>
+          <p class="pillar-body">
+            We are based in Kaduna. Our engineers come directly to your facility to assess power infrastructure, pull network cabling, mount hardware, and train your staff. When you need support, you speak directly to our local systems team.
+          </p>
+          <div class="pillar-tag">Direct Local Support &bull; Guaranteed Response</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve Section -->
+  <section class="section section-white" id="industries">
+    <div class="container">
+      <div class="section-lead">
+        <span class="kicker">Sector Focus</span>
+        <h2 class="section-title">Industries We Serve</h2>
+        <p class="section-description">
+          We work with established organizations across Kaduna and Northern Nigeria that require strict revenue accounting and physical access control.
+        </p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card">
+          <div class="industry-header">
+            <span class="industry-badge">Commercial Sector</span>
+            <h3 class="industry-title">Businesses & Retail Networks</h3>
+          </div>
+          <p class="industry-text">
+            Supermarkets, wholesale distribution depots, logistics warehouses, and manufacturing factories. We eliminate stock shrinkage, streamline point-of-sale checkout, and balance daily cash drawers.
+          </p>
+          <div class="industry-solution">Deployments: Proxima BMS + Biometric Time Control</div>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-header">
+            <span class="industry-badge">Healthcare Sector</span>
+            <h3 class="industry-title">Hospitals & Clinical Facilities</h3>
+          </div>
+          <p class="industry-text">
+            Private medical hospitals, diagnostic imaging centers, maternity homes, and specialized surgical clinics. We ensure uninterrupted consultation notes, HMO billing audit, and pharmacy stock security.
+          </p>
+          <div class="industry-solution">Deployments: Proxima HMS + On-Premise EMR Server</div>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-header">
+            <span class="industry-badge">Education Sector</span>
+            <h3 class="industry-title">Schools & Private Academies</h3>
+          </div>
+          <p class="industry-text">
+            Primary, secondary, and vocational academies. We eliminate continuous assessment errors, automate term report generation, reconcile tuition bank slips, and verify gate roll-call.
+          </p>
+          <div class="industry-solution">Deployments: Proxima SMS + Turnstile Clock-In</div>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-header">
+            <span class="industry-badge">Multi-Location</span>
+            <h3 class="industry-title">Multi-Branch Enterprises</h3>
+          </div>
+          <p class="industry-text">
+            Companies with head offices in Kaduna and operational branches in Abuja, Kano, Zaria, and beyond. We provide consolidated executive dashboards without requiring expensive leased fiber lines.
+          </p>
+          <div class="industry-solution">Deployments: Hybrid Replicated Edge Cluster</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Company Section -->
+  <section class="section section-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <span class="kicker">About Proxima Digital Innovations</span>
+          <h2 class="section-title">An Engineering-First Company Based in Kaduna</h2>
+          <p class="about-lead">
+            Proxima Digital Innovations was founded to build software and hardware systems that work under real African operational constraints.
+          </p>
+          <p class="about-p">
+            Most modern software assumes constant high-speed internet, zero power drops, and ideal infrastructure. In Nigeria, businesses deal with generator switchovers, fluctuating bandwidth, and physical security challenges every day.
+          </p>
+          <p class="about-p">
+            We build systems that thrive in this reality. Headquartered in Kaduna, our team writes proprietary software, interfaces physical hardware sensors, and conducts on-site implementations. We are directly accountable for the uptime and data integrity of every facility we power.
+          </p>
+          <div class="about-fact-strip">
+            <div class="about-fact">
+              <strong>Kaduna, Nigeria</strong>
+              <span>Operational Headquarters</span>
+            </div>
+            <div class="about-fact">
+              <strong>Direct Engineers</strong>
+              <span>No Outsourced Support</span>
+            </div>
+            <div class="about-fact">
+              <strong>Production-Proven</strong>
+              <span>Active Private Deployments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card-col">
+          <div class="standards-box">
+            <h3 class="standards-title">Our Operating Principles</h3>
+            <ul class="standards-list">
+              <li>
+                <strong>Data Sovereignty First:</strong>
+                <span>Your clinical records, employee biometrics, and accounting ledgers live securely inside your facility under your control.</span>
+              </li>
+              <li>
+                <strong>Zero Tolerance for Ghost Punches:</strong>
+                <span>Hardware biometric matching is non-repudiable and immune to buddy-punching or supervisor overrides.</span>
+              </li>
+              <li>
+                <strong>Engineered for Long Lifecycles:</strong>
+                <span>We build stable, durable systems with automated local database maintenance and self-healing background services.</span>
+              </li>
+              <li>
+                <strong>Direct On-Site Implementation:</strong>
+                <span>We handle the complete installation: server deployment, network cabling, turnstile mounting, and staff training.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Demo Request Section -->
+  <section class="section section-dark" id="contact">
+    <div class="container contact-container">
+      <div class="contact-left">
+        <span class="kicker kicker-light">Get in Touch</span>
+        <h2 class="contact-heading">Schedule a System Demonstration or On-Site Survey</h2>
+        <p class="contact-desc">
+          Speak with our systems engineers. We will analyze your facility layout, hardware requirements, and multi-branch infrastructure to propose a dependable deployment.
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="method-label">Headquarters</span>
+              <span class="method-val">Kaduna, Kaduna State, Nigeria</span>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="method-label">Engineering Inquiries</span>
+              <a href="mailto:contact@proximadigital.ng" class="method-link">contact@proximadigital.ng</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="method-label">Direct Technical Desk</span>
+              <span class="method-val">+234 (0) 800 PROXIMA &bull; Kaduna</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sla-notice">
+          <span class="sla-dot"></span>
+          <span>SLA: Technical inquiries receive engineer response within 4 business hours.</span>
+        </div>
+      </div>
+
+      <!-- Lead Consultation Form -->
+      <div class="contact-right">
+        <form class="consultation-form" id="consultationForm" novalidate>
+          <h3 class="form-title">Request System Demonstration</h3>
+          <p class="form-subtitle">Tell us about your organization and requirements.</p>
+
+          <div class="form-grid-2">
+            <div class="form-field">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Ibrahim Abubakar" required>
+              <span class="field-error" id="nameError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="workEmail">Work Email <span class="required">*</span></label>
+              <input type="email" id="workEmail" name="workEmail" class="form-input" placeholder="name@company.com" required>
+              <span class="field-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-field">
+              <label for="phoneNumber">Phone / WhatsApp <span class="required">*</span></label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+234 800 000 0000" required>
+              <span class="field-error" id="phoneError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="companyName">Organization & Location <span class="required">*</span></label>
+              <input type="text" id="companyName" name="companyName" class="form-input" placeholder="e.g. Al-Madina Clinics, Kaduna" required>
+              <span class="field-error" id="companyError"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-field">
+              <label for="systemSelect">System Required <span class="required">*</span></label>
+              <select id="systemSelect" name="systemSelect" class="form-input" required>
+                <option value="" disabled selected>Select system...</option>
+                <option value="bms">Proxima BMS / ERP (Business Management)</option>
+                <option value="hms">Proxima HMS (Hospital & Clinical EMR)</option>
+                <option value="sms">Proxima SMS (School Management)</option>
+                <option value="biometric">Biometric Access & Turnstiles</option>
+                <option value="multi">Comprehensive Multi-System Deployment</option>
+              </select>
+              <span class="field-error" id="systemError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="scopeSelect">Facility Scope <span class="required">*</span></label>
+              <select id="scopeSelect" name="scopeSelect" class="form-input" required>
+                <option value="" disabled selected>Select scope...</option>
+                <option value="single-small">Single Facility (&lt;50 Users)</option>
+                <option value="single-large">Single Major Facility (50–250 Users)</option>
+                <option value="multi-branch">Multi-Branch (2 to 5 Facilities)</option>
+                <option value="enterprise">Enterprise Network (6+ Facilities)</option>
+              </select>
+              <span class="field-error" id="scopeError"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="requirements">Operational Challenges / Scope Notes</label>
+            <textarea id="requirements" name="requirements" class="form-input" rows="3" placeholder="Briefly describe your current pain points (e.g., inventory leakage, offline sync, attendance tracking, HMO reconciliation)..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitFormBtn">
+            <span>Submit Demo Request</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+
+          <div class="form-alert" id="formAlert" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Corporate Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col-brand">
         <div class="footer-brand">
-          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="28" height="28" rx="3" fill="#0F172A"/>
-            <path d="M7 7H13V13H7V7Z" fill="#FFFFFF"/>
-            <path d="M15 7H21V13H15V7Z" fill="#1E3A8A"/>
-            <path d="M7 15H13V21H7V15Z" fill="#1E3A8A"/>
-            <path d="M15 15H21V21H15V15Z" fill="#FFFFFF"/>
-            <circle cx="14" cy="14" r="1.75" fill="#38BDF8"/>
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="4" fill="#0F172A"/>
+            <path d="M8 8H14V14H8V8Z" fill="#FFFFFF"/>
+            <path d="M18 8H24V14H18V8Z" fill="#2563EB"/>
+            <path d="M8 18H14V24H8V18Z" fill="#2563EB"/>
+            <path d="M18 18H24V24H18V18Z" fill="#FFFFFF"/>
           </svg>
-          <span class="footer-brand-name">PROXIMA DIGITAL INNOVATIONS</span>
+          <span class="footer-title">PROXIMA DIGITAL INNOVATIONS</span>
         </div>
         <p class="footer-tagline">
-          Mission-critical enterprise management systems and hardware-integrated biometric security solutions. Engineered in Kaduna, Nigeria.
+          Mission-critical enterprise software and hardware-integrated biometric access control systems. Engineered and deployed in Kaduna, Nigeria.
         </p>
-        <div class="system-status-indicator">
-          <span class="status-pulse-dot"></span>
-          <span>Core Telemetry Nodes: 100% Operational</span>
+        <div class="footer-status-chip">
+          <span class="status-dot"></span>
+          <span>Kaduna Operations Center: Systems Online</span>
         </div>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Solutions</h4>
+        <h4 class="footer-heading">Products</h4>
         <ul class="footer-links">
-          <li><a href="#solutions" data-jump="bms">Proxima BMS / ERP</a></li>
-          <li><a href="#solutions" data-jump="hms">Proxima HMS (Hospital)</a></li>
-          <li><a href="#solutions" data-jump="sms">Proxima SMS (Schools)</a></li>
-          <li><a href="#solutions" data-jump="biometrics">Biometric Security</a></li>
+          <li><a href="#solutions" data-jump-tab="bms">Proxima BMS / ERP</a></li>
+          <li><a href="#solutions" data-jump-tab="hms">Proxima HMS (Hospital)</a></li>
+          <li><a href="#solutions" data-jump-tab="sms">Proxima SMS (Schools)</a></li>
+          <li><a href="#solutions" data-jump-tab="biometrics">Biometric Security</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Industries</h4>
+        <h4 class="footer-heading">Sectors</h4>
         <ul class="footer-links">
           <li><a href="#industries">Businesses & Retail</a></li>
           <li><a href="#industries">Hospitals & Clinics</a></li>
@@ -893,26 +1098,26 @@
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Company & Operations</h4>
+        <h4 class="footer-heading">Company</h4>
         <ul class="footer-links">
-          <li><a href="#company">About Proxima</a></li>
-          <li><a href="#why-proxima">Engineering Architecture</a></li>
-          <li><a href="#contact">Site Audits & Consultations</a></li>
-          <li><span class="footer-location-text">Kaduna State, Nigeria</span></li>
+          <li><a href="#about">About Proxima</a></li>
+          <li><a href="#architecture">Architecture & SLAs</a></li>
+          <li><a href="#hardware">Supported Hardware</a></li>
+          <li><a href="#contact">Site Audits & Contact</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="container footer-bottom">
+    <div class="container footer-sub">
       <div class="footer-copy">
         &copy; 2026 Proxima Digital Innovations. All rights reserved.
       </div>
-      <div class="footer-meta-notes">
-        <span>Kaduna, Nigeria</span>
-        <span class="bullet-sep">•</span>
+      <div class="footer-meta">
+        <span>Kaduna State, Nigeria</span>
+        <span class="sep">&bull;</span>
         <span>Offline-Resilient Architecture</span>
-        <span class="bullet-sep">•</span>
-        <span>Cryptographic Hardware Licensing</span>
+        <span class="sep">&bull;</span>
+        <span>Hardware Biometric Drivers</span>
       </div>
     </div>
   </footer>
